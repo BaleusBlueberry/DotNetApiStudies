@@ -1,0 +1,22 @@
+@BASE = http://localhost:5164
+
+GET {{BASE}}/weatherforecast/
+Accept: application/json
+
+### Get all the people
+
+GET {{BASE}}/people/
+
+### Add a person
+POST {{BASE}}/people/
+Content-Type: application/json
+
+{
+   "name": "Baleus Blueberry"
+}
+
+### Delete a PERSON
+DELETE {{BASE}}/people/
+
+### get a peron by id
+GET {{BASE}}/people/6697f7f6475be8d5d30d2fff
