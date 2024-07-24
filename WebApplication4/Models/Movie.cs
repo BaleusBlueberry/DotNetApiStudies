@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using WebApplication4.Repository;
 
 namespace WebApplication4.Models
 {
-    public class Movie
+    public class Movie : IEntity
     {
         [BsonId]
         [BsonRepresentation((BsonType.ObjectId))]
